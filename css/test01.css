@@ -1,0 +1,166 @@
+html{
+    height:500%;
+}
+body{
+    font-family: 黑体 ;
+    font-weight:100;
+    position: relative;
+    height:100%;
+
+}
+#content01{
+    position:relative;
+    width:100%;
+    left:0px;
+    font-size:20px;
+    height:20%;
+}
+
+#navbar{
+    background-color: white;
+    border-radius:0;
+    z-index:2;
+}
+
+#navlist>li.active{
+     background-color: red;
+}
+
+
+#leftnav{
+    height:100%;
+    position:fixed;
+    width:20%;
+    min-width: 250px;
+    z-index: 2;
+}
+#toppic{
+    height:35%;
+    background-image: url(../img/llzdesignstudio.png);
+    background-repeat: no-repeat;
+    background-size: 70% auto;
+    background-position:center;
+    box-shadow: 0px 0px 100px;
+    position: relative;
+}
+#newsboxs{
+    height:45%;
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+
+}
+#newsbox01{
+    position: relative;
+    margin-top: 3%;
+    margin-bottom:3%;
+    padding-left: 10%;
+    width:100%;
+    height:40%;
+    background-color:#666;
+    overflow: hidden;
+    color:#ccc;
+    transition-delay: 0s;
+    transition-property: height margin-top;
+    transition-duration: 0.5s;
+    transition-timing-function:ease-in-out;
+
+}
+
+#newsbox02{
+    position: relative;
+    margin-top:3%;
+    margin-bottom:3%;
+    padding-left: 10%;
+    width:100%;
+    height:40%;
+    background-color:#666;
+    overflow: hidden;
+    color:#ccc;
+    transition-delay: 0.5s;
+    transition-property: height;
+    transition-duration: 0.5s;
+    transition-timing-function:ease-in-out;
+}
+
+#newscontrol{
+    width:100%;
+    margin-top:3%;
+    height:50px;
+    background-color: #666;
+    line-height:auto;
+    overflow: hidden;
+    position:relative;
+}
+#newscontrol>#up{
+    color:#ccc;
+    text-align: center;
+    font-size: 80px;
+    position:relative;
+    top:-55px;
+    transform: rotate(0deg);
+    transition-delay: 0s;
+    transition-property: top;
+    transition-duration: 1s;
+    transition-timing-function:ease-in-out;
+}
+#navlist>li.active>a{
+    background-color:#666;
+    color:white;
+}
+#mycarousel{
+    position:relative;
+}
+#navlistleft{
+    height:50%;
+    background-color: white;
+    box-shadow: 0px 0px 100px;
+    z-index: 15;
+    position: relative;
+    top:0;
+    transition-delay: 0.5s;
+    transition-property: top;
+    transition-duration: 0.5s;
+    transition-timing-function:ease-in-out;
+}
+#navlistleft>button{
+    height:16.5%;
+    font-size: 25px;
+    line-height:20px;
+    padding:0;
+    border: 0px solid transparent;
+    border-radius: 0px;
+    text-align: left;
+    padding-left:25px;
+    font-weight: 100;
+    color:#666;
+    transition-delay: 0s;
+    transition-property: background-color;
+    transition-duration: 0.1s;
+    transition-timing-function:ease-in-out;
+}
+#navlistleft>button.active{
+    background-color: #666;
+    color:#ccc;
+    
+}
+.Ch{
+    font-family: "黑体";
+}
+.En{
+    font-family: Century Gothic;
+    font-weight: bold;
+}
+.F1{
+    font-size: 30px;
+    padding: 5px;
+}
+@media screen and (max-width: 768px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+  #leftnav {
+      display: none;
+  }
+    #navbar{
+      width:100%;
+      margin:0;
+    }
+}
