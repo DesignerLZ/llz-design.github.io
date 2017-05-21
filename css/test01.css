@@ -1,3 +1,11 @@
+@-webkit-keyframes opacity-up /* Safari and Chrome */
+{
+0%   {opacity:0%;}
+25%  {opacity:25%;}
+50%  {opacity:50%;}
+75%  {opacity:75%;}
+100% {opacity:100%;}
+} 
 html{
     height:500%;
 }
@@ -16,6 +24,13 @@ body{
     height:20%;
 }
 
+#content02{
+    position:relative;
+    width:100%;
+    left:0px;
+    font-size:20px;
+    height:20%;
+}
 #navbar{
     background-color: white;
     border-radius:0;
@@ -26,10 +41,43 @@ body{
 }
 #minipic{
     background-image: url(../img/llzdesignstudio-mini.png);
-    background-position: center;
-    background-size: 100%;
+    background-position: left;
+    background-size: auto 100%;
     background-repeat:no-repeat;
-    
+    padding-left: 60px;
+    font-size: 20px;
+}
+.welcome00{
+    position:absolute;
+    opacity:0;
+    transition-delay: 0s;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function:ease-in-out;
+}
+.welcome01{
+    position:absolute;
+    opacity:0;
+    transition-delay: 0s;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function:ease-in-out;
+}
+.welcome02{
+    position:absolute;
+    opacity:0;
+    transition-delay: 0s;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function:ease-in-out;
+}
+.welcome03{
+    position:absolute;
+    opacity:0;
+    transition-delay: 0s;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function:ease-in-out;
 }
 
 #leftnav{
@@ -45,7 +93,7 @@ body{
     background-repeat: no-repeat;
     background-size: 70% auto;
     background-position:center;
-    box-shadow: 0px 0px 100px;
+/*    box-shadow: 0px 0px 100px;*/
     position: relative;
 }
 #newsboxs{
@@ -53,15 +101,14 @@ body{
     list-style: none;
     position: relative;
     overflow: hidden;
-
 }
 #newsbox01{
     position: relative;
-    margin-top: 3%;
+    margin-top: 0%;
     margin-bottom:3%;
     padding-left: 10%;
     width:100%;
-    height:40%;
+    height:0%;
     background-color:#666;
     overflow: hidden;
     color:#ccc;
@@ -69,7 +116,6 @@ body{
     transition-property: height margin-top;
     transition-duration: 0.5s;
     transition-timing-function:ease-in-out;
-
 }
 
 #newsbox02{
@@ -78,7 +124,7 @@ body{
     margin-bottom:3%;
     padding-left: 10%;
     width:100%;
-    height:40%;
+    height:0%;
     background-color:#666;
     overflow: hidden;
     color:#ccc;
@@ -102,7 +148,7 @@ body{
     text-align: center;
     font-size: 80px;
     position:relative;
-    top:-55px;
+    top:-135px;
     transform: rotate(0deg);
     transition-delay: 0s;
     transition-property: top;
@@ -119,10 +165,10 @@ body{
 #navlistleft{
     height:50%;
     background-color: white;
-    box-shadow: 0px 0px 100px;
+/*    box-shadow: 0px 0px 100px;*/
     z-index: 15;
     position: relative;
-    top:0;
+    top:-35%;
     transition-delay: 0.5s;
     transition-property: top;
     transition-duration: 0.5s;
@@ -160,6 +206,28 @@ body{
     font-size: 30px;
     padding: 5px;
 }
+#pic01{
+    padding: 4px;
+    width:530px;
+    height:353px;
+    background-image:url(../pic/1.jpg);
+    background-size: 100% auto;
+}
+#pic02{
+    padding: 4px;
+    width:530px;
+    height:353px;
+    background-image:url(../pic/2.jpg);
+    background-size: 100% auto;
+}
+#pics{
+    height:100%;
+}
+#big-pic-01{
+    background-image: url(../pic/1.jpg);
+    background-size: 100% auto;
+    
+}
 @media screen and (max-width: 769px) { /*当屏幕尺寸小于768px时，应用下面的CSS样式*/
   #leftnav {
       display: none;
@@ -167,5 +235,32 @@ body{
     #navbar{
       width:100%;
       margin:0;
+      position:fixed;
+      top:0;
+      left:0;
+  }
+    #pic02{
+    padding: 0px;
+    margin: 0;
+    width:93vw;
+    height:62vw;
+    background-image:url(../pic/2.jpg);
+    background-size: 100% auto;
+  }
+    #pic01{
+    padding: 0px;
+    margin:0;
+    width:93vw;
+    height:62vw;
+    background-image:url(../pic/1.jpg);
+    background-size: 100% auto;
+  }
+    #pics{
+        margin:0;
+        padding:0;
+        left:-0.5vw;
+    }
+    #mycarousel{
+        top:10vh;
     }
 }
